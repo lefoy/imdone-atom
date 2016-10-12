@@ -11,14 +11,14 @@ class MenuView extends View
     @div class: "imdone-menu", =>
       @div class: "imdone-menu-inner", =>
         @div class: "imdone-toolbar", =>
-          @div click: "toggleMenu", class: "imdone-menu-toggle imdone-toolbar-button", title: "tools baby!", =>
+          @div click: "toggleMenu", class: "imdone-menu-toggle imdone-toolbar-button", title: "Settings", =>
             @a href: "#", class: "icon icon-gear"
-          @div click: "newList", class: "new-list-open imdone-toolbar-button", title: "I need another list", =>
+          @div click: "newList", class: "new-list-open imdone-toolbar-button", title: "Create new list", =>
             @a href: "#", class: "icon icon-plus"
           # DONE:170 Add a link to open filtered files issue:49
-          @div click: "openVisible", outlet: "zap", class: "imdone-toolbar-button text-success", title: "Zap! (open visible files)", =>
+          @div click: "openVisible", outlet: "zap", class: "imdone-toolbar-button text-success", title: "Open visible files", =>
             @a href: "#", class: "icon icon-zap"
-          @div class: "imdone-help imdone-toolbar-button", title: "Help, please!", =>
+          @div class: "imdone-help imdone-toolbar-button", title: "Help", =>
             @a href: "https://github.com/imdone/imdone-core#task-formats", class: "icon icon-question"
           @div class: "imdone-project-plugins"
         @div class: "imdone-filter", =>
